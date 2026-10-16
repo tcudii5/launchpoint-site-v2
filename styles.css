@@ -56,16 +56,6 @@ p{margin:0 0 1.1em}
 .btn-light{background:#fff;color:var(--ink)}
 .btn-light:hover{transform:translateY(-2px)}
 
-/* ticker */
-.ticker{background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden}
-.ticker-track{
-  display:flex;gap:3rem;white-space:nowrap;padding:.55rem 0;
-  font-size:.78rem;font-weight:600;color:var(--muted);
-  animation:slide 38s linear infinite;width:max-content;
-}
-.ticker-track span{display:inline-flex;gap:.5rem;align-items:center}
-.ticker-track span::before{content:"★";color:var(--accent)}
-@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* header */
 header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
@@ -493,7 +483,6 @@ details p{animation:fadeDown .4s cubic-bezier(.22,1,.36,1)}
   /* bigger tap targets, tighter rhythm */
   .btn{padding:1rem 1.4rem;min-height:50px}
   .hero-actions .btn{width:100%;justify-content:space-between}
-  .ticker-track{animation-duration:26s;font-size:.72rem;gap:2rem}
   .sec-head{margin-bottom:2rem}
   .quote blockquote{font-size:1rem}
   .price{font-size:2.4rem}
