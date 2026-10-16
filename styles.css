@@ -152,7 +152,17 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdro
   display:flex;flex-direction:column;transition:.22s ease;border:1px solid rgba(0,0,0,.06);
 }
 .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
-.card img{aspect-ratio:16/10;object-fit:cover}
+.card-media{position:relative}
+.card-media img{aspect-ratio:16/10;object-fit:cover;width:100%;display:block}
+.chip{
+  position:absolute;left:14px;bottom:14px;background:#fff;border-radius:10px;
+  padding:.5rem .75rem;box-shadow:0 8px 24px rgba(17,19,21,.18);
+  font-size:.68rem;font-weight:600;color:var(--muted);line-height:1.25;
+  display:flex;align-items:center;gap:.5rem;
+}
+.chip b{font-size:1.05rem;font-weight:800;color:var(--accent);letter-spacing:-.02em}
+.card:hover .chip{transform:translateY(-2px)}
+.chip{transition:.22s ease}
 .card-body{padding:1.6rem;display:flex;flex-direction:column;flex:1}
 .card-body p{color:var(--muted);font-size:.96rem;flex:1}
 .card-link{
