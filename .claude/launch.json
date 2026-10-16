@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "launchpoint", "runtimeExecutable": "python3", "runtimeArgs": ["-m","http.server","8788","--directory","/Users/tcudii/launchpoint-v2"], "port": 8788 }
+  ]
+}
