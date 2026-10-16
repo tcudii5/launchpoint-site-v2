@@ -97,9 +97,31 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdro
   padding:.9rem 1.1rem;box-shadow:var(--shadow);font-size:.85rem;font-weight:700;
 }
 .float-card small{display:block;font-weight:600;color:var(--muted);font-size:.74rem}
-.fc-1{left:-22px;top:28px}
-.fc-2{right:-18px;bottom:30px}
-.fc-num{font-size:1.5rem;font-weight:800;color:var(--accent);line-height:1}
+.fc-1{left:-26px;top:26px;width:180px}
+.fc-2{right:-22px;bottom:86px;width:196px}
+.fc-3{left:-10px;bottom:24px;width:150px}
+.fc-num{font-size:1.5rem;font-weight:800;color:var(--accent);line-height:1;display:block}
+.fc-num em{font-style:normal;font-size:.8rem;color:#1a9e62;vertical-align:middle}
+
+/* sparkline bars */
+.spark{display:flex;align-items:flex-end;gap:3px;height:30px;margin-top:.7rem}
+.spark i{flex:1;background:var(--accent);opacity:.3;border-radius:2px}
+.spark i:last-child{opacity:1}
+
+.fc-row{display:flex;align-items:center;gap:.45rem;font-size:.82rem}
+.fc-dot{width:7px;height:7px;border-radius:50%;background:#1a9e62;flex:none}
+.fc-stars{color:#f5a623;font-size:.8rem;letter-spacing:.08em;margin-top:.4rem;display:block}
+
+/* stacked media + overlay card */
+.media-stack{position:relative}
+.media-stack img{border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;box-shadow:var(--shadow)}
+.fc-4{right:-20px;bottom:-22px;width:236px}
+.fc-lines{margin-top:.6rem;display:grid;gap:.5rem}
+.fc-line{display:grid;grid-template-columns:52px 1fr 28px;align-items:center;gap:.5rem;font-size:.72rem;font-weight:600}
+.fc-line span{color:var(--muted)}
+.fc-line i{height:6px;border-radius:3px;background:var(--line);display:block}
+.fc-line u{display:block;height:100%;border-radius:3px;background:var(--accent);text-decoration:none}
+.fc-line b{text-align:right;font-size:.74rem}
 
 /* logo strip */
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-soft)}
@@ -242,6 +264,7 @@ footer a:hover{color:#fff}
   .cards,.steps,.plans,.quotes,.stats-grid{grid-template-columns:1fr 1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .float-card{display:none}
+  .media-stack img{aspect-ratio:16/10}
 }
 @media(max-width:700px){
   body{font-size:16px}
