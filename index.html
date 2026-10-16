@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<div class="progress" id="progress"></div>
+
 <!-- ticker -->
 <div class="ticker">
   <div class="ticker-track">
@@ -35,11 +37,14 @@
       <a href="#results">Results</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
+      <a class="drawer-cta btn btn-accent" href="#audit"><span>Get your free audit</span><span class="arrow">→</span></a>
+      <a class="drawer-tel" href="tel:+15551234567">(555) 123-4567</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <div class="scrim" id="scrim" hidden></div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <div class="nav-cta">
       <a class="nav-phone" href="tel:+15551234567">(555) 123-4567</a>
-      <a class="btn btn-primary" href="#audit"><span>Book Free Audit</span><span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="#audit"><span class="lbl-full">Book Free Audit</span><span class="lbl-short">Free Audit</span><span class="arrow">→</span></a>
     </div>
   </div>
 </header>
@@ -48,6 +53,7 @@
 
 <!-- hero -->
 <section class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i></div>
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">Built by operators. Run like a growth team.</p>
@@ -406,6 +412,12 @@
 </section>
 
 </main>
+
+<!-- mobile action bar -->
+<div class="mobile-bar" id="mobileBar">
+  <a class="mb-call" href="tel:+15551234567"><span class="mb-ic">✆</span>Call</a>
+  <a class="mb-cta" href="#audit">Get my free audit <span class="arrow">→</span></a>
+</div>
 
 <footer>
   <div class="wrap">
